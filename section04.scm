@@ -39,7 +39,7 @@
 
 (define (interest-rate amount)
   (cond
-    [(and (>= amount 0) (<= amount 1000)) 4]
+    [(<= amount 1000) 4]
     [(<= amount 5000) 4.5]
     [else 5]))
 
